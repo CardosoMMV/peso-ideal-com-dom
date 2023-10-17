@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso Ideal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="imgs/logo-pqn.png" alt="logo">
+    </header>
+    <main>
+        <h1>Vamos calcular o seu peso ideal</h1>
+        <h2>(Preencha os valores corretamente)</h2>
+
+        <section>
+            <p>Nome: <input type="text" name="" id="nome"></p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>Peso: <input type="number" name="" id="peso"></p>
+            <p>Altura: <input type="number" name="" id="altura"></p>
+        </section>
+        <p><input type="button" value="Verificar" onclick="verificar()" id="botao"></p>
+        <p id="resultado">Preencha os dados acima para ver o resultado!</p>
+    </main>
+    <script src="js/ps-ideal.js"></script>
+</body>
+</html>
